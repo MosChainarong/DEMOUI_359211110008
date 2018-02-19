@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="1.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="MAnage Studnet">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="378.0" prefWidth="202.0" style="-fx-background-color: #b2ebf2;" />
+                        <TableView fx:id="studentTable" layoutX="200.0" layoutY="33.0" prefHeight="302.0" prefWidth="400.0">
+                          <columns>
+                            <TableColumn fx:id="IDColumn" prefWidth="44.0" text="ID" />
+                            <TableColumn fx:id="FirsNameColumn" prefWidth="94.0" text="FirsName" />
+                              <TableColumn fx:id="LastNameColumn" prefWidth="87.0" text="LastName" />
+                              <TableColumn fx:id="EmailColumn" prefWidth="94.0" text="Email" />
+                              <TableColumn fx:id="dobColumn" prefWidth="79.0" text="Dete of Birth" />
+                          </columns>
+                        </TableView>
+                        <JFXTextField fx:id="searchTxt" layoutX="252.0" layoutY="4.0" />
+                        <Button fx:id="btnLoad" layoutX="205.0" layoutY="335.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="81.0" text="Load Data">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="205.0" layoutY="8.0" text="Saerch" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Heip?">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
